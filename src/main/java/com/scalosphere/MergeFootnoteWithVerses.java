@@ -23,7 +23,7 @@ public class MergeFootnoteWithVerses {
         Connection connection = null;
         Statement statement = null;
         ResultSet resultSet = null;
-        String fileName = "MergeFootnoteWIthVerses.sql"; // Name of the file to write
+        String fileName = "quran.kan.hamzah.sql"; // Name of the file to write
         FileWriter fileWriter = null;
         BufferedWriter bufferedWriter =null;
         // Create a BufferedWriter object to efficiently write characters to the file
@@ -99,7 +99,6 @@ public class MergeFootnoteWithVerses {
 
     // Method to get replacement content for a given footnote number
     private static String getReplacement(String c3footnotes, String footnoteNumber) {
-        System.out.println("c3footnotes--->"+c3footnotes+"---footnoteNumber--"+footnoteNumber);
 
         String pattern = "\\[" + Pattern.quote(footnoteNumber) + "\\]\\s*(.*?)\\s*(?=\\[\\d+(?:\\.\\w+)?\\]|$)";
         Pattern regex = Pattern.compile(pattern);
