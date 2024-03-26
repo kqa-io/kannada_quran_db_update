@@ -1,4 +1,4 @@
-UPDATE verses_content SET c2text = 'بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ' WHERE c0sura = 1 AND c1ayah = 1;
+UPDATE verses_content SET c2text = 'ಬಿಸ್ಮಿಲ್ಲಾಹಿ ಅರ್-ರಹ್ಮಾನಿ ಅರ್-ರಹೀಮ್' WHERE c0sura = 1 AND c1ayah = 1;
 UPDATE verses_content SET c2text = 'ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِينَ' WHERE c0sura = 1 AND c1ayah = 2;
 UPDATE verses_content SET c2text = 'ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ' WHERE c0sura = 1 AND c1ayah = 3;
 UPDATE verses_content SET c2text = 'مَٰلِكِ يَوۡمِ ٱلدِّينِ' WHERE c0sura = 1 AND c1ayah = 4;
