@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="db_update.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
+    <script-file value="$PROJECT_DIR$/db_update.sql" />
+    <script-mode>FILE</script-mode>
+    <data-source id="5c860dee-b6a7-4a15-8d48-10e0817d5cd7" />
+    <method v="2" />
+  </configuration>
+</component>
