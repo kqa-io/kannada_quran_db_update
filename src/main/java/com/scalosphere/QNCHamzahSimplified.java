@@ -37,7 +37,9 @@ public class QNCHamzahSimplified {
                         JSONObject obj = resultArray.getJSONObject(i);
                         String translation = obj.getString("translation");
                         String footnotes = obj.getString("footnotes");
-                        int docid = obj.getInt("id");
+                        int sura = obj.getInt("sura");
+                        int aya = obj.getInt("aya");
+
 
                         Matcher matcher = regex.matcher(translation);
                         StringBuffer replacedText = new StringBuffer();
@@ -47,13 +49,11 @@ public class QNCHamzahSimplified {
                             matcher.appendReplacement(replacedText, replacement);
                         }
                         matcher.appendTail(replacedText);
-
-
                         String updatedTranslation = replacedText.toString();
 
                         // Update the c3footnotes column with the content between [ and ]
                         bufferedWriter.write("UPDATE verses_content SET c2text= '" + escapeQuotes(updatedTranslation)
-                                + "' WHERE docid = " + docid + "; ");
+                                + "' WHERE c0sura = " + sura + " and c1ayah = " + aya + "; ");
                         bufferedWriter.newLine(); // Move to the next line
 
                     }
